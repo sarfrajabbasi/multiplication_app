@@ -1,0 +1,65 @@
+:root{
+    --mainBgColor :yellow;
+    --formBgColor:white;
+    --fontsMain:Verdana, Geneva, Tahoma, sans-serif;
+    --greenMe:rgb(33, 172, 33);
+}
+body{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--mainBgColor);
+    font-family:var(--fontsMain)
+}
+
+.form{
+    background-color: var(--formBgColor);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.input{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    border: 2px solid var(--greenMe);
+    color: var(--greenMe);
+    /* outline: none; */
+}
+.input::placeholder{
+    color: lightgray;
+    font-family: var(--fontsMain)
+}
+
+.btn{
+    background-color: var(--greenMe);
+    color:white ;
+    border: none;
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: var(--fontsMain);
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.btn:hover{
+    filter: brightness(0.9);
+}
+
+.score{
+    color: var(--greenMe);
+    text-align: right;
+}
+
