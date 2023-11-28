@@ -47,6 +47,7 @@ FORM_EL.addEventListener("submit", () => {
   if (USER_ANS === ANSWER) {
     score++;
     UpdateLocalStore();
+
   } else {
      score--;
       score = (score < 0)? 0 :score;
