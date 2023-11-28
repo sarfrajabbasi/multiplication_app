@@ -1,8 +1,9 @@
 :root{
-    --mainBgColor :yellow;
-    --formBgColor:white;
+    --mainBgColor :slateblue;
+    --formBgColor:lightgreen;
     --fontsMain:Verdana, Geneva, Tahoma, sans-serif;
-    --greenMe:rgb(33, 172, 33);
+    --greenMe:rgb(25, 158, 199);
+    --lightColor:lightgrey;
 }
 body{
     margin: 0;
@@ -31,17 +32,18 @@ body{
     display: block;
     padding: 10px;
     border: 2px solid var(--greenMe);
+    border-radius:4px ;
     color: var(--greenMe);
     /* outline: none; */
 }
 .input::placeholder{
-    color: lightgray;
+    color: var(--lightColor);
     font-family: var(--fontsMain)
 }
 
 .btn{
     background-color: var(--greenMe);
-    color:white ;
+    color:var(--formBgColor) ;
     border: none;
     display: block;
     border-radius: 10px;
